@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>JS presentation 3.0</title>
+
+	<meta name="description"
+		content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Mobinius">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style"
+		content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ?
+			'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest">
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Debugging in VS code</h1>
+				<h3>An introduction</h3>
+				<p>
+					<small>Created by Mobinius</small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Agenda</h2>
+				<ul>
+					<li>Introduction to debugging</li>
+					<li>Introduction to VS code tools</li>
+					<li>Introduction to debugging tools in VS code</li>
+					<li>Online editors</li>
+					<li>Q 'n A</li>
+				</ul>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<h3>Introduction to Debugging</h3>
+				<p> Minor mistakes that cause big problems: this is the story of
+					programming since
+					the dawn of computers</p>
+			</section>
+			<section data-markdown>
+				<p>Debugging is many things, but I often think of it as the art
+					of testing
+					assumptions. Usually, a problem starts like this. You write
+					a piece of
+					clever code, run it, and find out that it’s doing something
+					utterly
+					different than what you expected. There’s a disconnect — you
+					know what
+					you told the code to do, but that doesn’t seem to be what
+					it’s actually
+					doing.</p>
+			</section>
+			<section>
+				<p>
+					In other words, you’ve got assumptions about what’s
+					happening — what code
+					statements are running, what path your code is taking
+					through conditions
+					and loops, and what data your variables are holding. Here’s
+					the thing: at
+					least one of these assumptions is wrong. And the best way to
+					track down the
+					spot where your expectations diverge from the reality of
+					your code is with
+					debugging tools.
+				</p>
+			</section>
+			<section>
+				<h3>Why use editor for de-bugging ?!</h3>
+				<p>Consistency</p>
+			</section>
+
+			<section>
+				<p>Introduction to VS code</p>
+			</section>
+
+			<section>
+				<p>Introduction to de-bugging in VS code</p>
+
+				<section>
+					<pre>
+					<code>
+function addNumbers() {
+// Get the numbers out of the text boxes.
+var numberA = document.getElementById("numA").value;
+var numberB = document.getElementById("numA").value;
+// Perform the calculation.
+var result = numberA + numberB;
+// Show the result on the page.
+document.getElementById("result").innerHTML = result;
+}
+					</code>
+				</pre>
+
+
+				</section>
+
+				<section>
+					<img src="img/debugging_1.png" alt="main" srcset="">
+				</section>
+				<section>
+					<img src="img/debugicon.png" alt="" srcset="">
+				</section>
+				<section>
+					<img src="img/debug-menu.png" alt="">
+				</section>
+				<section>
+					<img src="img/debug-environments.png" alt="">
+				</section>
+				<section>
+					<img src="img/launch-configuration.png" alt="">
+				</section>
+				<section>
+					<img src="img/add-config.gif" alt="">
+				</section>
+				<section>
+					<h4>Debug actions</h4>
+					<img src="img/toolbar.png" alt="">
+					<ul>
+						<li>Continue / Pause F5</li>
+						<li>Step Over F10</li>
+						<li>Step Into F11</li>
+						<li>Step Out ⇧F11</li>
+						<li>Restart ⇧⌘F5</li>
+						<li>Stop ⇧F5</li>
+					</ul>
+
+				</section>
+				<section>
+					<h4>Break points</h4>
+					<h5>Single step execution</h5>
+					<img src="img/break-point.png" alt="breakpoint image"
+						srcset="">
+				</section>
+
+				<section>
+					<h3>breakpoint skip and usage</h3>
+					<img src="img/bp-description.png" alt="description" sizes=""
+						srcset="">
+
+				</section>
+
+				<section>
+					<h4>Log points</h4>
+					<img src="img/log-points.gif" alt="">
+				</section>
+
+				<section>
+					<h4>Spy on variables</h4>
+					<p>Hover over the variable name</p>
+					<img src="img/spy-variable.gif" alt="" srcset="">
+				</section>
+
+
+
+
+			</section>
+
+
+			<section>
+				<h2>Advanced breakpoints</h2>
+				<section>
+					<h4>Hit count</h4>
+					<img src="img/hitCount.gif" alt="">
+				</section>
+				<section>
+					<h4>Automatically open a URI when debugging a server program
+					</h4>
+					<img src="img/server-ready.gif" alt="">
+				</section>
+			</section>
+			<!-- <section>
+				<h2>When in doubt refer documentation</h2>
+				<a href="https://code.visualstudio.com/docs/editor/debugging">VS
+					code document</a>
+			</section> -->
+
+
+			<section>
+				<h2>Q 'n A</h2>
+			</section>
+
+			<section>
+				<h2>Thank you</h2>
+
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js',
+					condition: function () {
+						return !!document.querySelector(
+							'[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/markdown/markdown.js',
+					condition: function () {
+						return !!document.querySelector(
+							'[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/search/search.js',
+					async: true
+				},
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+	<script>
+		var editor = ace.edit("editor");
+	</script>
+</body>
+
+</html>

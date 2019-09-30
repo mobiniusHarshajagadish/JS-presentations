@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>JS presentation 2.0</title>
+
+	<meta name="description"
+		content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Mobinius">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style"
+		content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ?
+			'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest">
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Mark UP V/S Down</h1>
+				<h3>An introduction</h3>
+				<p>
+					<small>Created by Mobinius</small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Agenda</h2>
+				<ul>
+					<li>Introduction to Md</li>
+					<li>Introduction to MarkUp</li>
+					<li>Difference between Md and HTML</li>
+					<li>Description of XML and JSON</li>
+				</ul>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<h3>Markdown , HTML , Display</h3>
+				<p class="codepen" data-height="600" data-theme-id="dark"
+					data-default-tab="result" data-user="Harsha"
+					data-slug-hash="LLGwLb" data-preview="true"
+					style="height: 600px; width: 90%; align-items: left; justify-content: center; border: 2px solid; margin: 1em 0; padding: 0.2em;"
+					data-pen-title="Live Markdown Editor">
+
+				</p>
+				<script async
+					src="https://static.codepen.io/assets/embed/ei.js"></script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+					## Markdown support
+		
+								Write content using inline or external Markdown.
+								Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+		
+								```
+								<section data-markdown>
+								  ## Markdown support
+		
+								  Write content using inline or external Markdown.
+								  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+								</section>
+								```
+							</script>
+			</section>
+
+			<section>
+				<h3>JSON</h3>
+				<p class="codepen" data-height="600" data-theme-id="dark"
+					data-default-tab="result" data-user="Harsha"
+					data-slug-hash="yomZXq"
+					style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+					data-pen-title="yomZXq">
+					< </p> <script async
+						src="https://static.codepen.io/assets/embed/ei.js">
+						</script>
+			</section>
+			<section>
+				<p class="codepen" data-height="265" data-theme-id="dark"
+					data-default-tab="js,result" data-user="markbandilla"
+					data-slug-hash="adyyKJ"
+					style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+					data-pen-title="JSON2HTML">
+
+				</p>
+				<script async
+					src="https://static.codepen.io/assets/embed/ei.js"></script>
+			</section>
+
+			<section>
+				<h2>Q 'n A</h2>
+			</section>
+
+			<section>
+				<h2>Thank you</h2>
+
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js',
+					condition: function () {
+						return !!document.querySelector(
+							'[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/markdown/markdown.js',
+					condition: function () {
+						return !!document.querySelector(
+							'[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/search/search.js',
+					async: true
+				},
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+	<script>
+		var editor = ace.edit("editor");
+	</script>
+</body>
+
+</html>
